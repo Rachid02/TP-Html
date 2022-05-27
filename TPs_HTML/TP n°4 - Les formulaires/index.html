@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TP N°4 - Les formulaires">
+    <title>TP N°4 - Les formulaires</title>
+    <link rel="icon" type="image/x-icon" href="./Images/icone6.jpg">
+</head>
+
+<body>
+    <header>
+        <h1>N Rachid - Les formulaires</h1>
+    </header>
+    <!-- Etablir un formulaire ! -->
+    <form>
+        <h2>Mon premier formulaire</h2>
+        <span>
+            <input type="radio" name="Homme" value="Homme">Homme
+            <input type="radio" name="Femme" value="Femme">Femme
+            <input type="radio" name="Nonrenseigne" value="Non-renseigne">Non-renseigné
+        </span>
+        <div>
+            <div><label for="Nom">Nom<input type="text" name="Nom" id="Nom"></label></div>
+            <div><label for="Prénom">Prénom<input type="text" name="Prénom" id="Prénom"></label></div>
+        </div>
+        <div>
+            <label for="Age">
+                Âge
+                <input type="number" name="Âge" id="Age" min="16" max="99">
+            </label>
+        </div>
+        <div>
+            <label for="Email">
+                Email*
+                <input type="email" name="champ Email" id="Email" placeholder="Saississez votre email">
+            </label>
+        </div>
+        <div>
+            <label for="Champ&nbsp;de&nbsp;saisie">Message :<textarea name="Texte" id="Champ&nbsp;de&nbsp;saisie"
+                    cols="30" rows="3"></textarea></label>
+        </div>
+        <div>
+            <label for="Cochez">Cochez
+                <input type="checkbox" name="choix1" id="Cochez" value="1"> En cochant cette case, j'accepte les
+                conditions relatives à
+                l'utilisation de mes données personnelles. <a href="#">(Accéder aux mentions légales)</a>
+            </label>
+        </div>
+        <div>
+            <label for="Cliquez">Cliquez
+                <input type="submit" name="Envoyer le message" id="Cliquez" value="Envoyez le message">
+            </label>
+        </div>
+        <!-- Remarque le formulaire doit ressembler à l'exempme donné ! -->
+    </form>
+    <hr>
+    <h2>Ensemble de champs</h2>
+    <!-- Groupe de champs = "fieldset" -->
+    <form>
+        <fieldset>
+            <!-- Etablir une légende pour chaque groupe de champs ! -->
+            <legend>Mon second formulaire</legend>
+            <div>
+                <input type="radio" name="Homme2" value="Homme" checked>Homme
+                <input type="radio" name="Femme2" value="Femme">Femme
+                <input type="radio" name="Nonrenseigne2" value="Non-reneigne">Non-renseigné
+            </div>
+            <div>
+                <label for="Age">Âge</label>
+                <input type="number" name="Age" placeholder="00" min="16" max="99">
+            </div>
+
+            <fieldset>
+                <legend>Situation personnelle</legend>
+                <input type="radio" name="choix1" value="1" checked> Célibataire
+                <input type="radio" name="choix2" value="2"> Marié/e
+                <input type="radio" name="choix3" value="3"> Veuf/ve
+                <input type="radio" name="choix4" value="4"> Union libre
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact</legend>
+                <div>
+                    <label for="telephone">Entrez votre numéro de téléphone:</label>
+                    <input type="tel" name="telephone" id="telephone" placeholder="01-23-45-67-89"
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                </div>
+                <div>
+                    <label for="Email2">Email*</label>
+                    <input type="email" name="champEmail" id="Email2" placeholder="Saississez votre email">
+                </div>
+                <div>
+                    <label for="Message">Message :</label>
+                    <textarea id="Message" name="Message" placeholder="Rédigez votre unmessage"></textarea>
+                </div>                
+            </fieldset>
+
+            <div>
+                <input type="checkbox" name="choix1" value="1"> Confirmer l'exactitude des informations recensées.
+            </div>
+            <div>
+                <input type="submit" name="Envoyer le message" value="Transmettre mes coordonnées">
+            </div>
+        </fieldset>
+    </form>
+    <footer>
+        <a href="#" title="Redirectionversl'acceuil">Accueil</a>&nbsp;|&nbsp;
+        <a href="./exercice4.html" title="Redirectionversexercice4">Redirection vers exercice 4</a>&nbsp;|&nbsp;
+        <a href="./QCM.html" title="QCM">QCM</a>&nbsp;|&nbsp;
+    </footer>
+</body>
+
+</html>

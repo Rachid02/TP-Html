@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TPn°3-Les tableaux - N Rachid">
+    <title>TP N°3 - Les tableaux - N Rachid</title>
+    <link rel="icon" type="Image/jpg" href="./Images/icone3.jpg">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="" href="">
+</head>
+
+<body>
+    <header>
+        <h1>N Rachid - Les tableaux</h1>
+    </header>
+    <main>
+        <section id="exercice1">
+            <h2>Mon premier tableau</h2>
+            <!-- L'attribut border a été catégorisé comme obsolète par le W3C!
+            La méthode adéquate pour interfacer des bordures sur un tableau est à base de
+            CSS que vous étudierez prochainement. -->
+            <table border="2">
+                <thead>
+                    <!-- Toute l'entête du tableau ! -->
+                    <tr>
+                        <th>ID</th>
+                        <th>Game</th>
+                        <th>Console</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Le corps du tableau ici ! -->
+                    <tr>
+                        <td>001</td>
+                        <td>Pkmn Ruby</td>
+                        <td>Game Boy Advance</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Rayman 2</td>
+                        <td>Dreamcast</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Wario ware</td>
+                        <td>Game Boy Advance</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Sonice Advt</td>
+                        <td>Dreamcast</td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>... ... ...</td>
+                        <td>... ... ...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="exercice2">
+            <h2>Mon deuxième tableau</h2>
+            <!-- L'attribut rowspan sera utilisé ici ! -->
+            <table border="1">
+                <!-- L'entête du tableau ici ! -->
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Game</th>
+                        <th>Console</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Le corps du tableau ici ! -->
+                    <tr>
+                        <td>002</td>
+                        <td>Rayman</td>
+                        <td rowspan="2">Dreamcast</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Sonic Advt 2</td>
+                        <td>2001</td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>Pkmn Ruby</td>
+                        <td rowspan="2">Game Boy Advance</td>
+                        <td rowspan="2">2003</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Wario Ware</td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>... ... ...</td>
+                        <td>... ... ...</td>
+                        <td>... ... ...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="exercice3">
+            <h2>Mon troisième tableau</h2>
+            <!-- L'attribut colspan sera utilisé ici ! -->
+            <table border="1">
+                <thead>
+                <!-- L'entête du troisième tableau ici ! -->
+                    <tr>
+                        <th>ID</th>
+                        <th>Game</th>
+                        <th>Console</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <!-- Le corps du troisième tableau ici ! -->
+                    <tr>
+                        <td>001</td>
+                        <td>Pkmn Ruby</td>
+                        <td>Game Boy Advance</td>
+                        <td>30.00€</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Rayman 2</td>
+                        <td>Dreamcast</td>
+                        <td><b>40.00€</b></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Wario Ware</td>
+                        <td>Game Boy Advance</td>
+                        <td>25.00€</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Sonic Advt 2</td>
+                        <td>Dreamcast</td>
+                        <td><b>40.00€</b></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                <!-- Le pied de page du troisième tableau ici ! -->
+                    <tr>
+                        <td><b>Articles</b></td>
+                        <td colspan="3">Rayman 2 + Sonic Advt 2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><b>Total</b></td>
+                        <td><b>80.00€</b></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="exercice4">
+            <h2>Mon emploi du temps&nbsp;:</h2>
+            <!-- l'attribut rowspan et colspan seront utilisés ici ! -->
+            <table border="5">
+                <!-- L'entête du tableau de l'emploi du temps ! -->
+                <thead>
+                    <tr>
+                        <th colspan="7">EMPLOI DU TEMPS</th>
+                    </tr>
+                    <tr>
+                        <th>X</th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>WEEK-END</th>
+                    </tr>
+                </thead>
+                <!-- Le corps du tableau de l'emploi du temps ! -->
+                <tbody>
+                    <tr>
+                        <td rowspan="2">A.M.</td>
+                        <td rowspan="2">Rentrée</td>
+                        <td>HTML</td>
+                        <td>CSS</td>
+                        <td rowspan="4">Libre</td>
+                        <td>TP n°5</td>
+                        <td rowspan="4">NETFLIX & CHILL</td>
+                    </tr>
+                    <tr>
+                        <td>TP N°2</td>
+                        <td>TP N°4</td>
+                        <td>TP N°6</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">P.M.</td>
+                        <td>HTML</td>
+                        <td rowspan="2">TP N°3</td>
+                        <td rowspan="2">Bilan</td>
+                        <td>JS</td>
+                    </tr>
+                    <tr>
+                        <td>TP N°1</td>
+                        <td>PHP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
